@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:ValorantSelect"
         mc:Ignorable="d"
         Title="Valorant Select" Height="450" Width="800" Icon="/valornt.jpg" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF14131D">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <RadioButton x:Name="agents" Content="Agent Select" HorizontalAlignment="Left" Margin="264,202,0,0" VerticalAlignment="Top" Foreground="White" Height="15" Width="86"/>
-        <RadioButton x:Name="weapons" Content="Weapon Select" HorizontalAlignment="Left" Margin="450,202,0,0" VerticalAlignment="Top" Foreground="White" Height="15" Width="99"/>
-        <Button x:Name="select" Content="Select" Click="Button_Click" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Height="40" Width="107" ClickMode="Release"/>
-    </Grid>
+  <Grid Background="#FF14131D">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <RadioButton x:Name="agents" Content="Agent Select" HorizontalAlignment="Left" Margin="264,202,0,0" VerticalAlignment="Top" Foreground="White" Height="15" Width="136"/>
+    <RadioButton x:Name="weapons" Content="Weapon Select" HorizontalAlignment="Left" Margin="450,202,0,0" VerticalAlignment="Top" Foreground="White" Height="15" Width="136"/>
+    <Button x:Name="select" Content="Select" Click="Button_Click" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Height="40" Width="107" ClickMode="Release"/>
+  </Grid>
 </Window>
