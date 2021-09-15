@@ -1,0 +1,55 @@
+﻿<Window x:Class="ValorantSelect.Agent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValorantSelect"
+        mc:Ignorable="d"
+        Title="Agent" Height="450" Width="800" Icon="/valornt.jpg" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF14131D">
+        <Button Content="Choose" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="234" RenderTransformOrigin="0.683,1.244" Margin="31,376,0,0"/>
+        <Button Content="Back" Click="Reset_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="130" RenderTransformOrigin="0.683,1.244" Margin="270,376,0,0"/>
+        <Button Content="Respin" Click="Respin_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="338" RenderTransformOrigin="0.683,1.244" Margin="405,376,0,0"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="339" Margin="404,29,0,0" Stroke="Black" VerticalAlignment="Top" Width="339">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF081017"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <CheckBox x:Name="astra" Content="Astra" Click="Astra_Check_Click" HorizontalAlignment="Left" Margin="31,56,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="120" FontSize="16"/>
+        <CheckBox x:Name="breach" Content="Breach" Click="Breach_Check_Click" HorizontalAlignment="Left" Margin="186,56,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
+        <CheckBox x:Name="brimstone" Content="Brimstone" Click="Brim_Check_Click" HorizontalAlignment="Left" Margin="31,97,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
+        <CheckBox x:Name="cypher" Content="Cypher" Click="Cypher_Check_Click" HorizontalAlignment="Left" Margin="186,97,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
+        <CheckBox x:Name="jett" Content="Jett" Click="Jett_Check_Click" HorizontalAlignment="Left" Margin="31,138,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
+        <CheckBox x:Name="kayo" Content="KAY/O" Click="Kayo_Check_Click" HorizontalAlignment="Left" Margin="186,138,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
+        <CheckBox x:Name="killjoy" Content="Killjoy" Click="Killjoy_Check_Click" HorizontalAlignment="Left" Margin="31,179,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="118" FontSize="16"/>
+        <CheckBox x:Name="omen" Content="Omen" Click="Omen_Check_Click" HorizontalAlignment="Left" Margin="186,179,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="116" FontSize="16"/>
+        <CheckBox x:Name="phoenix" Content="Phoenix" Click="Phoenix_Check_Click" HorizontalAlignment="Left" Margin="31,221,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
+        <CheckBox x:Name="raze" Content="Raze" Click="Raze_Check_Click" HorizontalAlignment="Left" Margin="186,221,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
+        <CheckBox x:Name="reyna" Content="Reyna" Click="Reyna_Check_Click" HorizontalAlignment="Left" Margin="31,262,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
+        <CheckBox x:Name="sage" Content="Sage" Click="Sage_Check_Click" HorizontalAlignment="Left" Margin="186,262,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
+        <CheckBox x:Name="skye" Content="Skye" Click="Skye_Check_Click" HorizontalAlignment="Left" Margin="31,303,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
+        <CheckBox x:Name="sova" Content="Sova" Click="Sova_Check_Click" HorizontalAlignment="Left" Margin="186,303,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="115" FontSize="16"/>
+        <CheckBox x:Name="viper" Content="Viper" Click="Viper_Check_Click" HorizontalAlignment="Left" Margin="31,344,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
+        <CheckBox x:Name="yoru" Content="Yoru" Click="Yoru_Check_Click" HorizontalAlignment="Left" Margin="186,344,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="111" FontSize="16"/>
+
+        <Image x:Name="astraImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Astra_artwork.png" Opacity="0"/>
+        <Image x:Name="breachImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Breach_artwork.png" Opacity="0"/>
+        <Image x:Name="brimstoneImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Brimstone_artwork.png" Opacity="0"/>
+        <Image x:Name="cypherImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Cypher_artwork.png" Opacity="0"/>
+        <Image x:Name="jettImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Jett_artwork.png" Opacity="0"/>
+        <Image x:Name="kayoImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/KAYO_artwork.png" Opacity="0"/>
+        <Image x:Name="killjoyImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Killjoy_artwork.png" Opacity="0"/>
+        <Image x:Name="omenImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Omen_artwork.png" Opacity="0"/>
+        <Image x:Name="phoenixImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Phoenix_artwork.png" Opacity="0"/>
+        <Image x:Name="razeImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Raze_artwork.png" Opacity="0"/>
+        <Image x:Name="reynaImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Reyna_artwork.png" Opacity="0"/>
+        <Image x:Name="sageImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Sage_artwork.png" Opacity="0"/>
+        <Image x:Name="skyeImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Skye_artwork.png" Opacity="0"/>
+        <Image x:Name="sovaImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Sova_artwork.png" Opacity="0"/>
+        <Image x:Name="viperImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Viper_artwork.png" Opacity="0"/>
+        <Image x:Name="yoruImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Yoru_artwork.png" Opacity="0"/>
+
+        <Image x:Name="cover" HorizontalAlignment="Left" Height="337" Margin="405,30,0,0" VerticalAlignment="Top" Width="337" Source="/valornt.jpg" IsEnabled="True" Opacity="100"/>
+    </Grid>
+</Window>

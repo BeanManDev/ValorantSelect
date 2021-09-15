@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ares.png" />
+    <None Remove="Astra_artwork.png" />
+    <None Remove="Breach_artwork.png" />
+    <None Remove="Brimstone_artwork.png" />
+    <None Remove="Bucky.png" />
+    <None Remove="Bulldog.png" />
+    <None Remove="Classic.png" />
+    <None Remove="Cypher_artwork.png" />
+    <None Remove="FreePick.png" />
+    <None Remove="Frenzy.png" />
+    <None Remove="Ghost.png" />
+    <None Remove="Guardian.png" />
+    <None Remove="Heavy_Shields.png" />
+    <None Remove="Jett_artwork.png" />
+    <None Remove="Judge.png" />
+    <None Remove="KAYO_artwork.png" />
+    <None Remove="Killjoy_artwork.png" />
+    <None Remove="Light_Shields.png" />
+    <None Remove="Marshal.png" />
+    <None Remove="Odin.png" />
+    <None Remove="Omen_artwork.png" />
+    <None Remove="Operator.png" />
+    <None Remove="Phantom.png" />
+    <None Remove="Phoenix_artwork.png" />
+    <None Remove="Raze_artwork.png" />
+    <None Remove="Reyna_artwork.png" />
+    <None Remove="Sage_artwork.png" />
+    <None Remove="Sheriff.png" />
+    <None Remove="Shorty.png" />
+    <None Remove="Skye_artwork.png" />
+    <None Remove="Sova_artwork.png" />
+    <None Remove="Spectre.png" />
+    <None Remove="Spray_Choose_My_Weapon.gif" />
+    <None Remove="Stinger.png" />
+    <None Remove="valornt.jpg" />
+    <None Remove="Vandal.png" />
+    <None Remove="Viper_artwork.png" />
+    <None Remove="Yoru_artwork.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Ares.png" />
+    <Resource Include="Astra_artwork.png" />
+    <Resource Include="Breach_artwork.png" />
+    <Resource Include="Brimstone_artwork.png" />
+    <Resource Include="Bucky.png" />
+    <Resource Include="Bulldog.png" />
+    <Resource Include="Classic.png" />
+    <Resource Include="Cypher_artwork.png" />
+    <Resource Include="FreePick.png" />
+    <Resource Include="Frenzy.png" />
+    <Resource Include="Ghost.png" />
+    <Resource Include="Guardian.png" />
+    <Resource Include="Heavy_Shields.png" />
+    <Resource Include="Jett_artwork.png" />
+    <Resource Include="Judge.png" />
+    <Resource Include="KAYO_artwork.png" />
+    <Resource Include="Killjoy_artwork.png" />
+    <Resource Include="Light_Shields.png" />
+    <Resource Include="Marshal.png" />
+    <Resource Include="Odin.png" />
+    <Resource Include="Omen_artwork.png" />
+    <Resource Include="Operator.png" />
+    <Resource Include="Phantom.png" />
+    <Resource Include="Phoenix_artwork.png" />
+    <Resource Include="Raze_artwork.png" />
+    <Resource Include="Reyna_artwork.png" />
+    <Resource Include="Sage_artwork.png" />
+    <Resource Include="Sheriff.png" />
+    <Resource Include="Shorty.png" />
+    <Resource Include="Skye_artwork.png" />
+    <Resource Include="Sova_artwork.png" />
+    <Resource Include="Spectre.png" />
+    <Resource Include="Spray_Choose_My_Weapon.gif" />
+    <Resource Include="Stinger.png" />
+    <Resource Include="valornt.jpg" />
+    <Resource Include="Vandal.png" />
+    <Resource Include="Viper_artwork.png" />
+    <Resource Include="Yoru_artwork.png" />
+  </ItemGroup>
+
+</Project>
