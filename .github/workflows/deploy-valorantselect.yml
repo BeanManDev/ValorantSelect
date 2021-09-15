@@ -3,7 +3,7 @@ name: "Deploy ValorantSelect"
 on:
   push:
     tags:
-    - "ValorantSelect/v*"
+    - "valorantselect/v*"
 
 env:
   PROJECT_PATH: ValorantSelect/ValorantSelect.csproj
@@ -20,6 +20,6 @@ jobs:
 
       - run: dotnet restore ${{ env.PROJECT_PATH }}
 
-      - run: dotnet build${{ env.PROJECT_PATH }} -c Release --no-restore
+      - run: dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore
 
       - run: dotnet publish ${{ env.PROJECT_PATH }} -c Release --self-contained -r win-64 -p:PublishSingleFile=true -- no-build
