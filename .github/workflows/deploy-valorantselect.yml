@@ -22,7 +22,7 @@ jobs:
 
       - run: dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore
 
-      - run: dotnet publish ${{ env.PROJECT_PATH }} -c Release --self-contained -r win-x64 -p:PublishSingleFile=true
+      - run: dotnet publish ${{ env.PROJECT_PATH }} -c Release --self-contained -r win-x64 -p:PublishSingleFile=true --no-build
 
       - uses: actions/create-release@v1
         id: create_release
@@ -36,4 +36,4 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pattern: ValorantSelect/bin/Release/netcoreapp3.1/win-x64/publish/*.exe
-          release: ${{ steps.create_release.outputs.upload_url }}
+          release-url: ${{ steps.create_release.outputs.upload_url }}
