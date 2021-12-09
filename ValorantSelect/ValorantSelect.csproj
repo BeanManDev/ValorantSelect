@@ -8,85 +8,135 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\*.tff" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <None Remove="Ares.png" />
     <None Remove="Astra_artwork.png" />
+    <None Remove="Astra_icon.png" />
     <None Remove="Breach_artwork.png" />
+    <None Remove="Breach_icon.png" />
     <None Remove="Brimstone_artwork.png" />
+    <None Remove="Brimstone_icon.png" />
     <None Remove="Bucky.png" />
     <None Remove="Bulldog.png" />
+    <None Remove="Chamber_artwork.png" />
+    <None Remove="Chamber_icon.png" />
     <None Remove="Classic.png" />
+    <None Remove="ControllerClassSymbol.png" />
     <None Remove="Cypher_artwork.png" />
+    <None Remove="Cypher_icon.png" />
     <None Remove="FreePick.png" />
     <None Remove="Frenzy.png" />
     <None Remove="Ghost.png" />
     <None Remove="Guardian.png" />
     <None Remove="Heavy_Shields.png" />
     <None Remove="Jett_artwork.png" />
+    <None Remove="Jett_icon.png" />
     <None Remove="Judge.png" />
     <None Remove="KAYO_artwork.png" />
+    <None Remove="KAYO_icon.png" />
     <None Remove="Killjoy_artwork.png" />
+    <None Remove="Killjoy_icon.png" />
     <None Remove="Light_Shields.png" />
     <None Remove="Marshal.png" />
+    <None Remove="Menu.avi" />
+    <None Remove="Menu.gif" />
+    <None Remove="Menu.PNG" />
+    <None Remove="Menu2.PNG" />
     <None Remove="Odin.png" />
     <None Remove="Omen_artwork.png" />
+    <None Remove="Omen_icon.png" />
     <None Remove="Operator.png" />
     <None Remove="Phantom.png" />
     <None Remove="Phoenix_artwork.png" />
+    <None Remove="Phoenix_icon.png" />
     <None Remove="Raze_artwork.png" />
+    <None Remove="Raze_icon.png" />
     <None Remove="Reyna_artwork.png" />
+    <None Remove="Reyna_icon.png" />
     <None Remove="Sage_artwork.png" />
+    <None Remove="Sage_icon.png" />
+    <None Remove="SentinelClassSymbol.png" />
     <None Remove="Sheriff.png" />
     <None Remove="Shorty.png" />
     <None Remove="Skye_artwork.png" />
+    <None Remove="Skye_icon.png" />
     <None Remove="Sova_artwork.png" />
+    <None Remove="Sova_icon.png" />
     <None Remove="Spectre.png" />
     <None Remove="Spray_Choose_My_Weapon.gif" />
     <None Remove="Stinger.png" />
     <None Remove="valornt.jpg" />
     <None Remove="Vandal.png" />
     <None Remove="Viper_artwork.png" />
+    <None Remove="Viper_icon.png" />
     <None Remove="Yoru_artwork.png" />
+    <None Remove="Yoru_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Ares.png" />
     <Resource Include="Astra_artwork.png" />
+    <Resource Include="Astra_icon.png" />
     <Resource Include="Breach_artwork.png" />
+    <Resource Include="Breach_icon.png" />
     <Resource Include="Brimstone_artwork.png" />
+    <Resource Include="Brimstone_icon.png" />
     <Resource Include="Bucky.png" />
     <Resource Include="Bulldog.png" />
+    <Resource Include="Chamber_artwork.png" />
+    <Resource Include="Chamber_icon.png" />
     <Resource Include="Classic.png" />
+    <Resource Include="ControllerClassSymbol.png" />
     <Resource Include="Cypher_artwork.png" />
+    <Resource Include="Cypher_icon.png" />
     <Resource Include="FreePick.png" />
     <Resource Include="Frenzy.png" />
     <Resource Include="Ghost.png" />
     <Resource Include="Guardian.png" />
     <Resource Include="Heavy_Shields.png" />
     <Resource Include="Jett_artwork.png" />
+    <Resource Include="Jett_icon.png" />
     <Resource Include="Judge.png" />
     <Resource Include="KAYO_artwork.png" />
+    <Resource Include="KAYO_icon.png" />
     <Resource Include="Killjoy_artwork.png" />
+    <Resource Include="Killjoy_icon.png" />
     <Resource Include="Light_Shields.png" />
     <Resource Include="Marshal.png" />
+    <Resource Include="Menu.PNG" />
+    <Resource Include="Menu2.PNG" />
     <Resource Include="Odin.png" />
     <Resource Include="Omen_artwork.png" />
+    <Resource Include="Omen_icon.png" />
     <Resource Include="Operator.png" />
     <Resource Include="Phantom.png" />
     <Resource Include="Phoenix_artwork.png" />
+    <Resource Include="Phoenix_icon.png" />
     <Resource Include="Raze_artwork.png" />
+    <Resource Include="Raze_icon.png" />
     <Resource Include="Reyna_artwork.png" />
+    <Resource Include="Reyna_icon.png" />
     <Resource Include="Sage_artwork.png" />
+    <Resource Include="Sage_icon.png" />
+    <Resource Include="SentinelClassSymbol.png" />
     <Resource Include="Sheriff.png" />
     <Resource Include="Shorty.png" />
     <Resource Include="Skye_artwork.png" />
+    <Resource Include="Skye_icon.png" />
     <Resource Include="Sova_artwork.png" />
+    <Resource Include="Sova_icon.png" />
     <Resource Include="Spectre.png" />
     <Resource Include="Spray_Choose_My_Weapon.gif" />
     <Resource Include="Stinger.png" />
     <Resource Include="valornt.jpg" />
     <Resource Include="Vandal.png" />
     <Resource Include="Viper_artwork.png" />
+    <Resource Include="Viper_icon.png" />
     <Resource Include="Yoru_artwork.png" />
+    <Resource Include="Yoru_icon.png" />
   </ItemGroup>
 
 </Project>

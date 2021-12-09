@@ -12,9 +12,7 @@ using System.Windows.Shapes;
 
 namespace ValorantSelect
 {
-    /// <summary>
-    /// Interaction logic for Agent.xaml
-    /// </summary>
+   
     public partial class Agent : Window
     {
         List<string> agentArray = new List<string>();
@@ -22,6 +20,18 @@ namespace ValorantSelect
         public Agent()
         {
             InitializeComponent();
+            
+        }
+
+        private void All_Click(object sender, RoutedEventArgs e)
+        {
+            boxSelect();
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            agentArray.Clear();
+            boxReset();
         }
 
         private void Astra_Check_Click(object sender, RoutedEventArgs e)
@@ -95,6 +105,32 @@ namespace ValorantSelect
                 if (brimstone.IsChecked == true)
                 {
                     agentArray.Add("Brimstone");
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+        private void Chamber_Check_Click(object sender, RoutedEventArgs e)
+        {
+            if (agentArray.Contains("Chamber") == true)
+            {
+                if (chamber.IsChecked == true)
+                {
+                    return;
+                }
+                else
+                {
+                    agentArray.Remove("Chamber");
+
+                }
+            }
+            else
+            {
+                if (chamber.IsChecked == true)
+                {
+                    agentArray.Add("Chamber");
                 }
                 else
                 {
@@ -440,6 +476,7 @@ namespace ValorantSelect
                 }
             }
         }
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (cover.Opacity == 100)
@@ -464,6 +501,11 @@ namespace ValorantSelect
                     {
                         cover.Opacity = 0;
                         brimstoneImage.Opacity = 100;
+                    }
+                    else if (agentArray[val] == "Chamber")
+                    {
+                        cover.Opacity = 0;
+                        chamberImage.Opacity = 100;
                     }
                     else if (agentArray[val] == "Cypher")
                     {
@@ -533,7 +575,7 @@ namespace ValorantSelect
                 }
             }
         }
-        private void Reset_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
             winReset();
         }
@@ -556,6 +598,7 @@ namespace ValorantSelect
                         {
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
+                        chamberImage.Opacity = 0;
                         cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
@@ -575,6 +618,7 @@ namespace ValorantSelect
                         {
                         astraImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
+                        chamberImage.Opacity = 0;
                         cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
@@ -594,6 +638,7 @@ namespace ValorantSelect
                         {
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
+                        chamberImage.Opacity = 0;
                         cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
@@ -609,11 +654,32 @@ namespace ValorantSelect
                         yoruImage.Opacity = 0;
                         brimstoneImage.Opacity = 100;
                         }
+                        else if (agentArray[val] == "Chamber")
+                        {
+                            astraImage.Opacity = 0;
+                            breachImage.Opacity = 0;
+                            brimstoneImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
+                            jettImage.Opacity = 0;
+                            kayoImage.Opacity = 0;
+                            killjoyImage.Opacity = 0;
+                            omenImage.Opacity = 0;
+                            phoenixImage.Opacity = 0;
+                            razeImage.Opacity = 0;
+                            reynaImage.Opacity = 0;
+                            sageImage.Opacity = 0;
+                            skyeImage.Opacity = 0;
+                            sovaImage.Opacity = 0;
+                            viperImage.Opacity = 0;
+                            yoruImage.Opacity = 0;
+                            chamberImage.Opacity = 100;
+                        }
                         else if (agentArray[val] == "Cypher")
                         {
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
+                        chamberImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -633,7 +699,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 100;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -652,7 +719,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
                         omenImage.Opacity = 0;
@@ -671,7 +739,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         omenImage.Opacity = 0;
@@ -690,7 +759,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -709,7 +779,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -728,7 +799,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -747,7 +819,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -766,7 +839,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -785,7 +859,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -804,7 +879,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -823,7 +899,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -842,7 +919,8 @@ namespace ValorantSelect
                         astraImage.Opacity = 0;
                         breachImage.Opacity = 0;
                         brimstoneImage.Opacity = 0;
-                        cypherImage.Opacity = 0;
+                            chamberImage.Opacity = 0;
+                            cypherImage.Opacity = 0;
                         jettImage.Opacity = 0;
                         kayoImage.Opacity = 0;
                         killjoyImage.Opacity = 0;
@@ -861,12 +939,77 @@ namespace ValorantSelect
 
             }
         }
+       
         public void winReset()
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
         }
+       
+        public void boxReset()
+        {
+            imageReset();
+            astra.IsChecked = false;
+            breach.IsChecked = false;
+            brimstone.IsChecked = false;
+            chamber.IsChecked = false;
+            cypher.IsChecked = false;
+            jett.IsChecked = false;
+            kayo.IsChecked = false;
+            killjoy.IsChecked = false;
+            omen.IsChecked = false;
+            phoenix.IsChecked = false;
+            raze.IsChecked = false;
+            reyna.IsChecked = false;
+            sage.IsChecked = false;
+            skye.IsChecked = false;
+            sova.IsChecked = false;
+            viper.IsChecked = false;
+            yoru.IsChecked = false;
+        }
+
+        public void boxSelect()
+        {
+            agentArray.Clear();
+
+            astra.IsChecked = true;
+            breach.IsChecked = true;
+            brimstone.IsChecked = true;
+            chamber.IsChecked = true;
+            cypher.IsChecked = true;
+            jett.IsChecked = true;
+            kayo.IsChecked = true;
+            killjoy.IsChecked = true;
+            omen.IsChecked = true;
+            phoenix.IsChecked = true;
+            raze.IsChecked = true;
+            reyna.IsChecked = true;
+            sage.IsChecked = true;
+            skye.IsChecked = true;
+            sova.IsChecked = true;
+            viper.IsChecked = true;
+            yoru.IsChecked = true;
+
+            agentArray.Add("Astra");
+            agentArray.Add("Breach");
+            agentArray.Add("Brimstone");
+            agentArray.Add("Chamber");
+            agentArray.Add("Cypher");
+            agentArray.Add("Jett");
+            agentArray.Add("Kayo");
+            agentArray.Add("Killjoy");
+            agentArray.Add("Omen");
+            agentArray.Add("Phoenix");
+            agentArray.Add("Raze");
+            agentArray.Add("Reyna");
+            agentArray.Add("Sage");
+            agentArray.Add("Skye");
+            agentArray.Add("Sova");
+            agentArray.Add("Viper");
+            agentArray.Add("Yoru");
+        }
+
         public void imageReset()
         {
             cover.Opacity = 100;
@@ -887,6 +1030,7 @@ namespace ValorantSelect
             viperImage.Opacity = 0;
             yoruImage.Opacity = 0;
         }
+       
         public void cbClear()
         {
                 astra.IsChecked = false;

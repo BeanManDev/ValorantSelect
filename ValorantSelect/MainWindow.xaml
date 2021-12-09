@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ValorantSelect"
         mc:Ignorable="d"
+        FontFamily="/Fonts/#Valorant"
         Title="Valorant Select" Height="450" Width="800" Icon="/valornt.jpg" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-  <Grid Background="#FF14131D">
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition/>
-    </Grid.ColumnDefinitions>
-    <RadioButton x:Name="agents" Content="Agent Select" HorizontalAlignment="Left" Margin="264,202,0,0" VerticalAlignment="Top" Foreground="White" Height="15" Width="136"/>
-    <RadioButton x:Name="weapons" Content="Weapon Select" HorizontalAlignment="Left" Margin="450,202,0,0" VerticalAlignment="Top" Foreground="White" Height="15" Width="136"/>
-    <Button x:Name="select" Content="Select" Click="Button_Click" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Height="40" Width="107" ClickMode="Release"/>
-  </Grid>
+    <Grid Background="#FF14131D">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <RadioButton x:Name="agents" Content="Agent Select" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="175,0,0,0" VerticalAlignment="Center" Foreground="White" Height="15" Width="136" FontWeight="Normal" FontStyle="Normal" FontFamily="VALORANT"/>
+        <RadioButton x:Name="weapons" Content="Weapon Select" HorizontalAlignment="Right" Margin="0,0,175,0" VerticalAlignment="Center" Foreground="White" Height="15" Width="136" FontFamily="VALORANT"/>
+        <Button x:Name="select" Content="Select" Click="Button_Click" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Height="40" Width="107" ClickMode="Release" FontFamily="VALORANT" FontWeight="Bold" FontSize="16" FontStyle="Italic" Background="#7FDDDDDD"/>
+    </Grid>
 </Window>

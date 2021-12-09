@@ -5,44 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ValorantSelect"
         mc:Ignorable="d"
-        Title="Weapon" Height="450" Width="800" Icon="/valornt.jpg" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF14131D">
-        <Button Content="Loadout" Click="Loadout_Click" HorizontalAlignment="Center" Margin="17,40,0,0" VerticalAlignment="Top" Height="36" Width="605"/>
-        <Button Content="Secondary" Click="Loadout_Secondary_Click" HorizontalAlignment="Left" Margin="98,80,0,0" VerticalAlignment="Top" Height="36" Width="173"/>
-        <Button Content="Primary" Click="Loadout_Primary_Click" HorizontalAlignment="Center" Margin="16,80,0,0" VerticalAlignment="Top" Height="36" Width="250"/>
-        <Button Content="Shields" Click="Loadout_Shields_Click" HorizontalAlignment="Left" Margin="530,80,0,0" VerticalAlignment="Top" Height="36" Width="173"/>
-        <Button Content="Clear" Click="Button_Click_Clear" HorizontalAlignment="Left" Margin="98,121,0,0" VerticalAlignment="Top" Height="36" Width="605"/>
-        <Button Content="Home" Click="Button_Click" HorizontalAlignment="Center" Margin="0,368,0,0" VerticalAlignment="Top" Height="36" Width="95"/>
+        FontFamily="/Fonts/#Valorant"
+        Title="Weapon" Height="647" Width="1149" Icon="/valornt.jpg" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Menu2.PNG" Stretch="UniformToFill"/>
+        </Grid.Background>
 
-        <Rectangle HorizontalAlignment="Center" Height="138" Stroke="Black" VerticalAlignment="Top" Width="650" Fill="#FF101823" Margin="15,170,0,0"/>
-
-        <Border BorderThickness="5,5,5,5" BorderBrush="Black" Margin="71,169,59,99"/>
-
-        <Image x:Name="classic" HorizontalAlignment="Left" Height="96" Margin="109,203,0,0" VerticalAlignment="Top" Width="135" Source="/Classic.png" Opacity="0"/>
-        <Image x:Name="frenzy" HorizontalAlignment="Left" Height="96" Margin="109,203,0,0" VerticalAlignment="Top" Width="135" Source="/Frenzy.png" Opacity="0"/>
-        <Image x:Name="ghost" HorizontalAlignment="Left" Height="120" Margin="94,220,0,0" VerticalAlignment="Top" Width="169" Source="/Ghost.png" Opacity="0"/>
-        <Image x:Name="sheriff" HorizontalAlignment="Left" Height="96" Margin="109,203,0,0" VerticalAlignment="Top" Width="135" Source="/Sheriff.png" Opacity="0"/>
-        <Image x:Name="shorty" HorizontalAlignment="Left" Height="96" Margin="109,220,0,0" VerticalAlignment="Top" Width="135" Source="/Shorty.png" Opacity="0"/>
-        <Image x:Name="free1" HorizontalAlignment="Left" Height="96" Margin="109,203,0,0" VerticalAlignment="Top" Width="135" Source="/FreePick.png" Opacity="0"/>
+        <Button Content="Loadout" Click="Loadout_Click" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="36" Width="605" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
+        <Button Content="Secondary" Click="Loadout_Secondary_Click" HorizontalAlignment="Left" Margin="264,80,0,0" VerticalAlignment="Top" Height="36" Width="173" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
+        <Button Content="Primary" Click="Loadout_Primary_Click" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Height="36" Width="250" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
+        <Button Content="Shields" Click="Loadout_Shields_Click" HorizontalAlignment="Right" Margin="0,80,264,0" VerticalAlignment="Top" Height="36" Width="173" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
+        <Button Content="Clear" Click="Button_Click_Clear" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="36" Width="605" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
+        <Button Content="Back" Click="Button_Click" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Height="36" Width="95" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" Background="#7FDDDDDD"/>
 
 
-        <Image x:Name="ares" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Ares.png" Opacity="0" Margin="50,215,0,0"/>
-        <Image x:Name="bucky" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Bucky.png" Opacity="0" Margin="50,215,0,0"/>
-        <Image x:Name="bulldog" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Bulldog.png" Opacity="0" Margin="50,199,0,0"/>
-        <Image x:Name="guardian" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Guardian.png" Opacity="0" Margin="50,215,0,0"/>
-        <Image x:Name="judge" HorizontalAlignment="Center" Height="95" VerticalAlignment="Top" Width="248" Source="/Judge.png" Opacity="0" Margin="50,205,0,0"/>
-        <Image x:Name="marshal" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Marshal.png" Opacity="0" Margin="50,215,0,0"/>
-        <Image x:Name="odin" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Odin.png" Opacity="0" Margin="50,209,0,0"/>
-        <Image x:Name="bigBoom" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Operator.png" Opacity="0" Margin="50,215,0,0"/>
-        <Image x:Name="phantom" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Phantom.png" Opacity="0" Margin="50,209,0,0"/>
-        <Image x:Name="spectre" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Spectre.png" Opacity="0" Margin="50,199,0,0"/>
-        <Image x:Name="stinger" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Stinger.png" Opacity="0" Margin="50,199,0,0"/>
-        <Image x:Name="vandal" HorizontalAlignment="Center" Height="104" VerticalAlignment="Top" Width="272" Source="/Vandal.png" Opacity="0" Margin="50,199,0,0"/>
-        <Image x:Name="free2" HorizontalAlignment="Center" Height="96" VerticalAlignment="Top" Width="134" Source="/FreePick.png" Opacity="0" Margin="50,203,0,0"/>
 
-        <Image x:Name="light" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="136" Margin="589,180,0,0" Source="/Light_Shields.png" Opacity="0"/>
-        <Image x:Name="heavy" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="136" Margin="589,180,0,0" Source="/Heavy_Shields.png" Opacity="0"/>
-        <Image x:Name="free3" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="134" Source="/FreePick.png" Opacity="0" Margin="584,203,0,0"/>
+
+        <Image x:Name="classic" HorizontalAlignment="Left" Height="96" Margin="150,0,0,0" VerticalAlignment="Center" Width="135" Source="/Classic.png" Opacity="0"/>
+        <Image x:Name="frenzy" HorizontalAlignment="Left" Height="96" Margin="150,0,0,0" VerticalAlignment="Center" Width="135" Source="/Frenzy.png" Opacity="0"/>
+        <Image x:Name="ghost" HorizontalAlignment="Left" Height="120" Margin="125,0,0,0" VerticalAlignment="Center" Width="169" Source="/Ghost.png" Opacity="0"/>
+        <Image x:Name="sheriff" HorizontalAlignment="Left" Height="96" Margin="150,0,0,0" VerticalAlignment="Center" Width="135" Source="/Sheriff.png" Opacity="0"/>
+        <Image x:Name="shorty" HorizontalAlignment="Left" Height="96" Margin="150,0,0,0" VerticalAlignment="Center" Width="135" Source="/Shorty.png" Opacity="0"/>
+        <Image x:Name="free1" HorizontalAlignment="Left" Height="96" Margin="150,0,0,0" VerticalAlignment="Center" Width="135" Source="/FreePick.png" Opacity="0"/>
+
+
+        <Image x:Name="ares" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Ares.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="bucky" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Bucky.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="bulldog" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Bulldog.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="guardian" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Guardian.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="judge" HorizontalAlignment="Center" Height="95" VerticalAlignment="Center" Width="248" Source="/Judge.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="marshal" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Marshal.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="odin" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Odin.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="bigBoom" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Operator.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="phantom" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Phantom.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="spectre" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Spectre.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="stinger" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Stinger.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="vandal" HorizontalAlignment="Center" Height="104" VerticalAlignment="Center" Width="272" Source="/Vandal.png" Opacity="0" Margin="0,0,0,0"/>
+        <Image x:Name="free2" HorizontalAlignment="Center" Height="96" VerticalAlignment="Center" Width="134" Source="/FreePick.png" Opacity="0" Margin="0,0,0,0"/>
+
+        <Image x:Name="light" HorizontalAlignment="Right" Height="122" VerticalAlignment="Center" Width="136" Margin="0,0,150,0" Source="/Light_Shields.png" Opacity="0"/>
+        <Image x:Name="heavy" HorizontalAlignment="Right" Height="122" VerticalAlignment="Center" Width="136" Margin="0,0,150,0" Source="/Heavy_Shields.png" Opacity="0"/>
+        <Image x:Name="free3" HorizontalAlignment="Right" Height="96" VerticalAlignment="Center" Width="134" Source="/FreePick.png" Opacity="0" Margin="0,0,150,0"/>
 
     </Grid>
 </Window>

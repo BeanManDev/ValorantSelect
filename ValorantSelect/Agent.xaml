@@ -5,51 +5,344 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ValorantSelect"
         mc:Ignorable="d"
-        Title="Agent" Height="450" Width="800" Icon="/valornt.jpg" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF14131D">
-        <Button Content="Choose" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="234" RenderTransformOrigin="0.683,1.244" Margin="31,376,0,0"/>
-        <Button Content="Back" Click="Reset_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="130" RenderTransformOrigin="0.683,1.244" Margin="270,376,0,0"/>
-        <Button Content="Respin" Click="Respin_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="338" RenderTransformOrigin="0.683,1.244" Margin="405,376,0,0"/>
+        FontFamily="VALORANT"
+        Title="Agent" Height="647" Width="1149" Icon="/valornt.jpg" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" SizeToContent="Manual" FontSize="16">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Menu.PNG" Stretch="UniformToFill"/>
+        </Grid.Background>
 
-        <Rectangle HorizontalAlignment="Left" Height="339" Margin="404,29,0,0" Stroke="Black" VerticalAlignment="Top" Width="339">
-            <Rectangle.Fill>
-                <SolidColorBrush Color="#FF081017"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <CheckBox x:Name="astra" Content="Astra" Click="Astra_Check_Click" HorizontalAlignment="Left" Margin="31,56,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="120" FontSize="16"/>
-        <CheckBox x:Name="breach" Content="Breach" Click="Breach_Check_Click" HorizontalAlignment="Left" Margin="186,56,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
-        <CheckBox x:Name="brimstone" Content="Brimstone" Click="Brim_Check_Click" HorizontalAlignment="Left" Margin="31,97,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
-        <CheckBox x:Name="cypher" Content="Cypher" Click="Cypher_Check_Click" HorizontalAlignment="Left" Margin="186,97,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
-        <CheckBox x:Name="jett" Content="Jett" Click="Jett_Check_Click" HorizontalAlignment="Left" Margin="31,138,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
-        <CheckBox x:Name="kayo" Content="KAY/O" Click="Kayo_Check_Click" HorizontalAlignment="Left" Margin="186,138,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
-        <CheckBox x:Name="killjoy" Content="Killjoy" Click="Killjoy_Check_Click" HorizontalAlignment="Left" Margin="31,179,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="118" FontSize="16"/>
-        <CheckBox x:Name="omen" Content="Omen" Click="Omen_Check_Click" HorizontalAlignment="Left" Margin="186,179,0,0" VerticalAlignment="Top" Foreground="White" Height="32" Width="116" FontSize="16"/>
-        <CheckBox x:Name="phoenix" Content="Phoenix" Click="Phoenix_Check_Click" HorizontalAlignment="Left" Margin="31,221,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
-        <CheckBox x:Name="raze" Content="Raze" Click="Raze_Check_Click" HorizontalAlignment="Left" Margin="186,221,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
-        <CheckBox x:Name="reyna" Content="Reyna" Click="Reyna_Check_Click" HorizontalAlignment="Left" Margin="31,262,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
-        <CheckBox x:Name="sage" Content="Sage" Click="Sage_Check_Click" HorizontalAlignment="Left" Margin="186,262,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="116" FontSize="16"/>
-        <CheckBox x:Name="skye" Content="Skye" Click="Skye_Check_Click" HorizontalAlignment="Left" Margin="31,303,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
-        <CheckBox x:Name="sova" Content="Sova" Click="Sova_Check_Click" HorizontalAlignment="Left" Margin="186,303,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="115" FontSize="16"/>
-        <CheckBox x:Name="viper" Content="Viper" Click="Viper_Check_Click" HorizontalAlignment="Left" Margin="31,344,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="118" FontSize="16"/>
-        <CheckBox x:Name="yoru" Content="Yoru" Click="Yoru_Check_Click" HorizontalAlignment="Left" Margin="186,344,0,0" VerticalAlignment="Top" Foreground="White" Height="31" Width="111" FontSize="16"/>
+        <Button Content="Choose" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="36" Width="338" RenderTransformOrigin="0.683,1.244" Margin="155,0,0,50" FontFamily="VALORANT" FontSize="16" FontStyle="Italic" FontWeight="Bold" Background="#7FDDDDDD"/>
+        <Button Content="Back" Click="Back_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="36" Width="130" RenderTransformOrigin="0.683,1.244" Margin="0,0,0,50" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" Background="#7FDDDDDD"/>
+        <Button Content="Respin" Click="Respin_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="36" Width="338" RenderTransformOrigin="0.683,1.244" Margin="0,0,155,50" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
 
-        <Image x:Name="astraImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Astra_artwork.png" Opacity="0"/>
-        <Image x:Name="breachImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Breach_artwork.png" Opacity="0"/>
-        <Image x:Name="brimstoneImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Brimstone_artwork.png" Opacity="0"/>
-        <Image x:Name="cypherImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Cypher_artwork.png" Opacity="0"/>
-        <Image x:Name="jettImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Jett_artwork.png" Opacity="0"/>
-        <Image x:Name="kayoImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/KAYO_artwork.png" Opacity="0"/>
-        <Image x:Name="killjoyImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Killjoy_artwork.png" Opacity="0"/>
-        <Image x:Name="omenImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Omen_artwork.png" Opacity="0"/>
-        <Image x:Name="phoenixImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Phoenix_artwork.png" Opacity="0"/>
-        <Image x:Name="razeImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Raze_artwork.png" Opacity="0"/>
-        <Image x:Name="reynaImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Reyna_artwork.png" Opacity="0"/>
-        <Image x:Name="sageImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Sage_artwork.png" Opacity="0"/>
-        <Image x:Name="skyeImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Skye_artwork.png" Opacity="0"/>
-        <Image x:Name="sovaImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Sova_artwork.png" Opacity="0"/>
-        <Image x:Name="viperImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Viper_artwork.png" Opacity="0"/>
-        <Image x:Name="yoruImage" HorizontalAlignment="Left" Height="324" Margin="470,36,0,0" VerticalAlignment="Top" Width="222" Source="/Yoru_artwork.png" Opacity="0"/>
+        <Button x:Name="all" Content="All" Click="All_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="200" RenderTransformOrigin="0.683,1.244" Margin="300,23,0,0" FontFamily="VALORANT" FontWeight="Bold" FontStyle="Italic" FontSize="16" Background="#7FDDDDDD"/>
+        <Button Content="Clear" Click="Clear_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Height="36" Width="200" RenderTransformOrigin="0.683,1.244" Margin="0,23,300,0" FontFamily="VALORANT" FontSize="16" FontWeight="Bold" FontStyle="Italic" Background="#7FDDDDDD"/>
 
-        <Image x:Name="cover" HorizontalAlignment="Left" Height="337" Margin="405,30,0,0" VerticalAlignment="Top" Width="337" Source="/valornt.jpg" IsEnabled="True" Opacity="100"/>
+        <CheckBox x:Name="astra" Content="Astra" Click="Astra_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,110,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Astra_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Astra_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="breach" Content="Breach" Click="Breach_Check_Click" HorizontalAlignment="Left" Margin="919,129,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Breach_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Breach_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="brimstone" Content="Brimstone" Click="Brim_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="100,145,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="121" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Brimstone_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Brimstone_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="chamber" Content="Chamber" Click="Chamber_Check_Click" HorizontalAlignment="Left" Margin="919,164,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Chamber_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Chamber_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="cypher" Content="Cypher" Click="Cypher_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,180,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Cypher_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Cypher_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="jett" Content="Jett" Click="Jett_Check_Click" HorizontalAlignment="Left" Margin="919,199,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Jett_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Jett_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="kayo" Content="KAY/O" Click="Kayo_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,215,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="KAYO_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/KAYO_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="killjoy" Content="Killjoy" Click="Killjoy_Check_Click" HorizontalAlignment="Left" Margin="919,234,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Killjoy_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Killjoy_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="omen" Content="Omen" Click="Omen_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,250,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Omen_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Omen_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="phoenix" Content="Phoenix" Click="Phoenix_Check_Click" HorizontalAlignment="Left" Margin="919,269,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Phoenix_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Phoenix_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="raze" Content="Raze" Click="Raze_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,285,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Raze_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Raze_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="reyna" Content="Reyna" Click="Reyna_Check_Click" HorizontalAlignment="Left" Margin="919,305,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Reyna_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Reyna_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="sage" Content="Sage" Click="Sage_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,321,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Sage_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Sage_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="skye" Content="Skye" Click="Skye_Check_Click" HorizontalAlignment="Left" Margin="919,340,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Skye_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Skye_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="sova" Content="Sova" Click="Sova_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,355,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Sova_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Sova_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="viper" Content="Viper" Click="Viper_Check_Click" HorizontalAlignment="Left" Margin="919,374,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Viper_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Viper_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="yoru" Content="Yoru" Click="Yoru_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,390,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="Yoru_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Yoru_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <Image x:Name="astraImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Astra_artwork.png" Opacity="0"/>
+        <Image x:Name="breachImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Breach_artwork.png" Opacity="0"/>
+        <Image x:Name="brimstoneImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Brimstone_artwork.png" Opacity="0"/>
+        <Image x:Name="chamberImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Chamber_artwork.png" Opacity="0"/>
+        <Image x:Name="cypherImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Cypher_artwork.png" Opacity="0"/>
+        <Image x:Name="jettImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Jett_artwork.png" Opacity="0"/>
+        <Image x:Name="kayoImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/KAYO_artwork.png" Opacity="0"/>
+        <Image x:Name="killjoyImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Killjoy_artwork.png" Opacity="0"/>
+        <Image x:Name="omenImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Omen_artwork.png" Opacity="0"/>
+        <Image x:Name="phoenixImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Phoenix_artwork.png" Opacity="0"/>
+        <Image x:Name="razeImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Raze_artwork.png" Opacity="0"/>
+        <Image x:Name="reynaImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Reyna_artwork.png" Opacity="0"/>
+        <Image x:Name="sageImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Sage_artwork.png" Opacity="0"/>
+        <Image x:Name="skyeImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Skye_artwork.png" Opacity="0"/>
+        <Image x:Name="sovaImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Sova_artwork.png" Opacity="0"/>
+        <Image x:Name="viperImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Viper_artwork.png" Opacity="0"/>
+        <Image x:Name="yoruImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Yoru_artwork.png" Opacity="0"/>
+
+        <Image x:Name="cover" HorizontalAlignment="Left" Height="337" Margin="400,92,0,0" VerticalAlignment="Top" Width="338" Source="/valornt.jpg" IsEnabled="True" Opacity="100"/>
     </Grid>
 </Window>
