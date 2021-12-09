@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="Fonts\*.tff" />
+    <Resource Include="Fonts\*.ttf" />
   </ItemGroup>
   
   <ItemGroup>
