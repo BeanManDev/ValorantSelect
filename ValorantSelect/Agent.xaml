@@ -37,7 +37,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="breach" Content="Breach" Click="Breach_Check_Click" HorizontalAlignment="Left" Margin="919,129,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="breach" Content="Breach" Click="Breach_Check_Click" HorizontalAlignment="Right" Margin="0,110,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -73,7 +73,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="chamber" Content="Chamber" Click="Chamber_Check_Click" HorizontalAlignment="Left" Margin="919,164,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="chamber" Content="Chamber" Click="Chamber_Check_Click" HorizontalAlignment="Right" Margin="0,145,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -109,7 +109,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="jett" Content="Jett" Click="Jett_Check_Click" HorizontalAlignment="Left" Margin="919,199,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="jett" Content="Jett" Click="Jett_Check_Click" HorizontalAlignment="Right" Margin="0,180,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -145,7 +145,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="killjoy" Content="Killjoy" Click="Killjoy_Check_Click" HorizontalAlignment="Left" Margin="919,234,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="killjoy" Content="Killjoy" Click="Killjoy_Check_Click" HorizontalAlignment="Right" Margin="0,215,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -163,7 +163,25 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="omen" Content="Omen" Click="Omen_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,250,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="neon" Content="Neon" Click="Neon_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,250,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+            <CheckBox.ToolTip>
+                <ToolTip Placement="Left">
+                    <ToolTip.Template>
+                        <ControlTemplate>
+                            <StackPanel>
+                                <Image Height="150" Width="150" Source="/Neon_icon.png" Margin="0,0,10,0">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="/Neon_icon.png"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </StackPanel>
+                        </ControlTemplate>
+                    </ToolTip.Template>
+                </ToolTip>
+            </CheckBox.ToolTip>
+        </CheckBox>
+
+        <CheckBox x:Name="omen" Content="Omen" Click="Omen_Check_Click" FlowDirection="LeftToRight" HorizontalAlignment="Right" Margin="0,250,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -181,7 +199,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="phoenix" Content="Phoenix" Click="Phoenix_Check_Click" HorizontalAlignment="Left" Margin="919,269,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="phoenix" Content="Phoenix" Click="Phoenix_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,285,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -199,7 +217,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="raze" Content="Raze" Click="Raze_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,285,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="raze" Content="Raze" Click="Raze_Check_Click" FlowDirection="LeftToRight" HorizontalAlignment="Right" Margin="0,285,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -217,7 +235,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="reyna" Content="Reyna" Click="Reyna_Check_Click" HorizontalAlignment="Left" Margin="919,305,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="reyna" Content="Reyna" Click="Reyna_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,320,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -235,7 +253,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="sage" Content="Sage" Click="Sage_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,321,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="sage" Content="Sage" Click="Sage_Check_Click" FlowDirection="LeftToRight" HorizontalAlignment="Right" Margin="0,320,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -253,7 +271,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="skye" Content="Skye" Click="Skye_Check_Click" HorizontalAlignment="Left" Margin="919,340,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="skye" Content="Skye" Click="Skye_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,355,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -271,7 +289,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="sova" Content="Sova" Click="Sova_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,355,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="sova" Content="Sova" Click="Sova_Check_Click" FlowDirection="LeftToRight" HorizontalAlignment="Right" Margin="0,355,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -289,7 +307,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="viper" Content="Viper" Click="Viper_Check_Click" HorizontalAlignment="Left" Margin="919,374,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="viper" Content="Viper" Click="Viper_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,390,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -307,7 +325,7 @@
             </CheckBox.ToolTip>
         </CheckBox>
 
-        <CheckBox x:Name="yoru" Content="Yoru" Click="Yoru_Check_Click" FlowDirection="RightToLeft" HorizontalAlignment="Left" Margin="105,390,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
+        <CheckBox x:Name="yoru" Content="Yoru" Click="Yoru_Check_Click" FlowDirection="LeftToRight" HorizontalAlignment="Right" Margin="0,390,114,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="116" FontSize="16" FontFamily="VALORANT">
             <CheckBox.ToolTip>
                 <ToolTip Placement="Left">
                     <ToolTip.Template>
@@ -333,6 +351,7 @@
         <Image x:Name="jettImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Jett_artwork.png" Opacity="0"/>
         <Image x:Name="kayoImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/KAYO_artwork.png" Opacity="0"/>
         <Image x:Name="killjoyImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Killjoy_artwork.png" Opacity="0"/>
+        <Image x:Name="neonImage" HorizontalAlignment="Left" Height="333" Margin="461,90,0,0" VerticalAlignment="Top" Width="270" Source="/Neon_artwork.png" Opacity="0"/>
         <Image x:Name="omenImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Omen_artwork.png" Opacity="0"/>
         <Image x:Name="phoenixImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Phoenix_artwork.png" Opacity="0"/>
         <Image x:Name="razeImage" HorizontalAlignment="Left" Height="324" Margin="466,98,0,0" VerticalAlignment="Top" Width="222" Source="/Raze_artwork.png" Opacity="0"/>

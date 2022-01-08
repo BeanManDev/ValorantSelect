@@ -45,6 +45,8 @@
     <None Remove="Menu.gif" />
     <None Remove="Menu.PNG" />
     <None Remove="Menu2.PNG" />
+    <None Remove="Neon_artwork.png" />
+    <None Remove="Neon_icon.png" />
     <None Remove="Odin.png" />
     <None Remove="Omen_artwork.png" />
     <None Remove="Omen_icon.png" />
@@ -108,6 +110,8 @@
     <Resource Include="Marshal.png" />
     <Resource Include="Menu.PNG" />
     <Resource Include="Menu2.PNG" />
+    <Resource Include="Neon_artwork.png" />
+    <Resource Include="Neon_icon.png" />
     <Resource Include="Odin.png" />
     <Resource Include="Omen_artwork.png" />
     <Resource Include="Omen_icon.png" />
