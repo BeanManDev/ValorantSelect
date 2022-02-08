@@ -70,6 +70,9 @@
     <None Remove="Spectre.png" />
     <None Remove="Spray_Choose_My_Weapon.gif" />
     <None Remove="Stinger.png" />
+    <None Remove="Valorant_Select_Agent_Banner.png" />
+    <None Remove="Valorant_Select_Banner.png" />
+    <None Remove="Valorant_Select_Weapon_Banner.png" />
     <None Remove="valornt.jpg" />
     <None Remove="Vandal.png" />
     <None Remove="Viper_artwork.png" />
@@ -135,6 +138,9 @@
     <Resource Include="Spectre.png" />
     <Resource Include="Spray_Choose_My_Weapon.gif" />
     <Resource Include="Stinger.png" />
+    <Resource Include="Valorant_Select_Agent_Banner.png" />
+    <Resource Include="Valorant_Select_Banner.png" />
+    <Resource Include="Valorant_Select_Weapon_Banner.png" />
     <Resource Include="valornt.jpg" />
     <Resource Include="Vandal.png" />
     <Resource Include="Viper_artwork.png" />
