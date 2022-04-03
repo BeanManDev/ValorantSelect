@@ -1,23 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ValorantSelect
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,20 +12,33 @@ namespace ValorantSelect
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-          if (agents.IsChecked == true)
-          {
-                Agent agentWin = new Agent();
-                agentWin.Show();
-                this.Close();
-          }
-          else if (weapons.IsChecked == true)
-          {
-                Weapon weaponWin = new Weapon();
-                weaponWin.Show();
-                this.Close();
-          }
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void CloseWindow_CanExec(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        private void CloseWindow_Exec(object sender, ExecutedRoutedEventArgs e)
+        {
+            SystemCommands.CloseWindow(this);
+        }
+
+        private void AgentRandBtn(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new AgentRandomizer();
+            
+        }
+
+        private void WeaponRandBtn(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new WeaponRandomizer();
         }
     }
 }
