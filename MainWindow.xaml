@@ -1,0 +1,80 @@
+﻿<Window x:Class="ValorantSelect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValorantSelect"
+        mc:Ignorable="d"
+        FontFamily="/Fonts/#Valorant"
+        Title="Valorant Select" Height="650" Width="1200" Icon="/valornt.jpg" WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="#1A1926">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static SystemCommands.CloseWindowCommand}" CanExecute="CloseWindow_CanExec" Executed="CloseWindow_Exec"/>
+    </Window.CommandBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#14131D" Grid.ColumnSpan="2" MouseDown="Grid_MouseDown">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="vAlorantSelect" Foreground="#ff4c70" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+
+            <TextBlock Text="Agent Randomizer" Foreground="Gray" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+            <StackPanel Grid.Column="2" Grid.ColumnSpan="2">
+                <Button Content="Agent Randomizer" Height="25" BorderThickness="0" Background="#14131D" Foreground="Gray" Click="AgentRandBtn"/>
+            </StackPanel>
+
+            <TextBlock Text="Weapon Randomizer" Foreground="Gray" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+            <StackPanel Grid.Column="4" Grid.ColumnSpan="2">
+                <Button Content="Weapon Randomizer" Height="25" BorderThickness="0" Background="#14131D" Foreground="Gray" Click="WeaponRandBtn"/>
+            </StackPanel>
+
+            <Button Content="Close" Foreground="White" FontSize="10" ToolTip="Close ValoranSelect" Command="{x:Static SystemCommands.CloseWindowCommand}" Margin="0,0,10,0" Grid.Column="12">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#fe6584"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#ff4c70"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="75" Height="15" CornerRadius="8" Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+
+        <Frame x:Name="Main" Grid.Row="1" Source="Home.xaml" NavigationUIVisibility="Hidden"/>
+
+
+        
+    </Grid>
+</Window>
