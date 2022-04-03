@@ -10,13 +10,8 @@
     <ApplicationIcon>valornt.ico</ApplicationIcon>
     <Authors>BeanManDev</Authors>
     <Company>TheBeanSquad</Company>
-    <Version>1.0.8-pre-release</Version>
     <PackageIcon>valornt.jpg</PackageIcon>
     <PackageIconUrl />
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>D:\VSTemp\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -465,6 +460,7 @@
     <None Remove="Images\Misc\Valorant_Select_Banner.png" />
     <None Remove="Images\Misc\Valorant_Select_Weapon_Banner.png" />
     <None Remove="Images\Misc\valornt.png" />
+    <None Remove="valornt.jpg" />
   </ItemGroup>
   
   <ItemGroup>
@@ -908,7 +904,6 @@
     <Resource Include="Images\Misc\Valorant_Select_Banner.png" />
     <Resource Include="Images\Misc\Valorant_Select_Weapon_Banner.png" />
     <Resource Include="Images\Misc\valornt.png" />
-    <Resource Include="valornt.jpg" />
   </ItemGroup>
   
   <ItemGroup>
